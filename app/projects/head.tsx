@@ -1,15 +1,12 @@
-export default function Head() {
+export default function ProjectsHead() {
   return (
     <>
-      <title>Murat Kars</title>
+      <title>Projects - Murat Kars</title>
       <meta
         content="width=device-width, initial-scale=1"
         name="viewport"
       />
-      <meta
-        name="description"
-        content="Personal website of Murat Kars"
-      />
+      <meta name="description" content="My all projects" />
       <link rel="icon" href="/favicon.ico" />
     </>
   );
