@@ -14,7 +14,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>
+      <body className="h-screen place-content-between grid grid-cols-1 justify-items-center">
         <Navbar />
         {children}
         <Footer />

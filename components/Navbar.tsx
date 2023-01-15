@@ -1,30 +1,20 @@
 import Link from "next/link";
 
+const NavbarItems = [
+  { name: "Home", path: "/" },
+  { name: "Projects", path: "/projects" },
+  { name: "Certificates", path: "/certificates" },
+  { name: "Contact", path: "/contact" },
+];
+
 export default function Navbar() {
   return (
     <div>
-      <ul>
-        <li>
-          <Link href="/">
-            <div>Home</div>
-          </Link>
-        </li>
-        <li>
-          <Link href="/projects">
-            <div>Projects</div>
-          </Link>
-        </li>
-        <li>
-          <Link href="/certificates">
-            <div>Certificates</div>
-          </Link>
-        </li>
-        <li>
-          <Link href="/contact">
-            <div>Contact</div>
-          </Link>
-        </li>
-      </ul>
+      {NavbarItems.map((item) => (
+        <Link href={item.path} key={item.name}>
+          {item.name}
+        </Link>
+      ))}
     </div>
   );
 }
