@@ -1,7 +1,7 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
+import PersonalCard from "@/components/PersonalCard";
 export default function RootLayout({
   children,
 }: {
@@ -16,7 +16,10 @@ export default function RootLayout({
       <head />
       <body className="h-screen place-content-between grid grid-cols-1 justify-items-center">
         <Navbar />
-        {children}
+        <div className="flex">
+          <PersonalCard />
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
