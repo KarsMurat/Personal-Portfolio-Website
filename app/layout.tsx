@@ -22,7 +22,7 @@ export default function RootLayout({
               <PersonalCard />
             </div>
           </div>
-          <div className="m-4 grid flex-1 grid-cols-1 place-content-between justify-items-center space-y-4 rounded-lg bg-zinc-800 p-8 shadow-sm shadow-black">
+          <div className="m-4 grid flex-1 grid-cols-1 place-content-between justify-items-center space-y-4 rounded-lg border-2 border-zinc-800 bg-zinc-900 p-8 shadow-xl shadow-black">
             <div className="absolute -top-4 -right-4">
               <Navbar />
             </div>
