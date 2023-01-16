@@ -9,7 +9,7 @@ const NavbarItems = [
 
 export default function Navbar() {
   return (
-    <div>
+    <div className="space-x-4 bg-zinc-500 m-4 p-1 px-3 rounded-md">
       {NavbarItems.map((item) => (
         <Link href={item.path} key={item.name}>
           {item.name}

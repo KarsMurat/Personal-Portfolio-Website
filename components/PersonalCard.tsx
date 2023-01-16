@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function PersonalCard() {
   return (
-    <div className="bg-zinc-800 m-4 p-4 rounded-3xl text-white justify-items-center space-y-7 place-content-between grid grid-cols-1 shadow-sm shadow-black">
+    <div className="bg-zinc-800 m-4 p-4 rounded-3xl text-white justify-items-center space-y-7 place-content-between grid grid-cols-1 shadow-sm shadow-black ">
       <div className="grid grid-cols-1 space-y-5 py-4 px-8 place-content-between justify-items-center">
         <Image
           className="rounded-3xl shadow-md shadow-black"
@@ -13,7 +13,7 @@ export default function PersonalCard() {
           alt="myAvatar"
         />
         <div className="text-4xl">Murat Kars</div>
-        <div className="bg-zinc-600 px-3 shadow-inner shadow-black p-1 rounded-md text-sm text-neutral-200">
+        <div className="bg-zinc-600 shadow-inner shadow-black p-1 px-3 rounded-md text-sm text-neutral-200">
           Junior Web Developer
         </div>
       </div>
