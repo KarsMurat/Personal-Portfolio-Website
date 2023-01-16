@@ -16,9 +16,11 @@ function PersonalCard() {
           height={175}
           alt="myAvatar"
         />
-        <div className="text-4xl">Murat Kars</div>
-        <div className="rounded-md bg-zinc-600 p-1 px-3 text-sm text-neutral-200 shadow-inner shadow-black">
-          Junior Web Developer
+        <div className="space-y-5">
+          <div className="text-4xl">Murat Kars</div>
+          <div className="rounded-md bg-zinc-600 p-1 px-3 text-sm text-neutral-200 shadow-inner shadow-black">
+            Junior Web Developer
+          </div>
         </div>
       </div>
       <Divide />

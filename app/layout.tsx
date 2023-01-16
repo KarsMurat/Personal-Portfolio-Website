@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PersonalCard from "@/components/PersonalCard";
+import Switcher from "@/components/Switcher";
 export default function RootLayout({
   children,
 }: {
@@ -15,7 +16,7 @@ export default function RootLayout({
       */}
       <head />
       <body className="grid h-screen grid-cols-1 justify-items-center bg-zinc-900 p-8">
-        <div className="relative flex w-9/12">
+        <div className="relative flex w-8/12">
           <div className="fixed left-0 flex h-screen">
             <div className="m-auto">
               <PersonalCard />
@@ -30,6 +31,7 @@ export default function RootLayout({
               <Footer />
             </div>
           </div>
+          <Switcher />
         </div>
       </body>
     </html>
