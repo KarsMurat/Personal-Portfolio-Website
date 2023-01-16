@@ -14,14 +14,14 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="justify-items-center bg-zinc-900 grid grid-cols-1 p-8 h-screen">
-        <div className="flex w-8/12 relative">
-          <div className="flex fixed h-screen left-0">
+      <body className="grid h-screen grid-cols-1 justify-items-center bg-zinc-900 p-8">
+        <div className="relative flex w-9/12">
+          <div className="fixed left-0 flex h-screen">
             <div className="m-auto">
               <PersonalCard />
             </div>
           </div>
-          <div className="flex-1 grid grid-cols-1 space-y-4 bg-zinc-800 m-4 p-4 rounded-lg shadow-sm shadow-black justify-items-center place-content-between">
+          <div className="m-4 grid flex-1 grid-cols-1 place-content-between justify-items-center space-y-4 rounded-lg bg-zinc-800 p-4 shadow-sm shadow-black">
             <div className="absolute -top-4 -right-4">
               <Navbar />
             </div>
