@@ -1,10 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function PersonalCard() {
+function Divide() {
+  return <div className="h-1 w-full rounded-full bg-zinc-900" />;
+}
+
+function PersonalCard() {
   return (
     <div className="m-4 grid grid-cols-1 place-content-between justify-items-center space-y-7 rounded-3xl bg-zinc-800 p-4 text-white shadow-sm shadow-black ">
-      <div className="grid grid-cols-1 place-content-between justify-items-center space-y-5 py-4 px-8">
+      <div className="grid grid-cols-1 place-content-between justify-items-center space-y-5 py-2 px-8">
         <Image
           className="rounded-3xl shadow-md shadow-black"
           src={"/myAvatar.png"}
@@ -17,6 +21,7 @@ export default function PersonalCard() {
           Junior Web Developer
         </div>
       </div>
+      <Divide />
       <div className="grid grid-cols-1 space-y-3">
         <div className="flex-col-2 flex items-center justify-items-center space-x-3">
           <Image
@@ -44,11 +49,25 @@ export default function PersonalCard() {
             <p>Istanbul</p>
           </div>
         </div>
+        <div className="flex-col-2 flex items-center justify-items-center space-x-3">
+          <Image
+            className="rounded-md"
+            src={"/myAvatar.png"}
+            width={40}
+            height={40}
+            alt="myAvatar"
+          />
+          <div className="flex flex-col">
+            <p className="text-zinc-400">Local Time</p>
+            <p>19:59 (UTC +03:00)</p>
+          </div>
+        </div>
       </div>
+      <Divide />
       <div className="flex space-x-3">
         <Link href={"https://www.linkedin.com/in/KarsMurat/"}>
           <Image
-            className="rounded-3xl "
+            className="rounded-3xl"
             src={"/myAvatar.png"}
             width={20}
             height={20}
@@ -57,7 +76,7 @@ export default function PersonalCard() {
         </Link>
         <Link href={"https://www.linkedin.com/in/KarsMurat/"}>
           <Image
-            className="rounded-3xl "
+            className="rounded-3xl"
             src={"/myAvatar.png"}
             width={20}
             height={20}
@@ -66,7 +85,7 @@ export default function PersonalCard() {
         </Link>
         <Link href={"https://www.linkedin.com/in/KarsMurat/"}>
           <Image
-            className="rounded-3xl "
+            className="rounded-3xl"
             src={"/myAvatar.png"}
             width={20}
             height={20}
@@ -75,7 +94,7 @@ export default function PersonalCard() {
         </Link>
         <Link href={"https://www.linkedin.com/in/KarsMurat/"}>
           <Image
-            className="rounded-3xl "
+            className="rounded-3xl"
             src={"/myAvatar.png"}
             width={20}
             height={20}
@@ -86,3 +105,4 @@ export default function PersonalCard() {
     </div>
   );
 }
+export default PersonalCard;
