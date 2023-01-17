@@ -7,8 +7,8 @@ function Divide() {
 
 function PersonalCard() {
   return (
-    <div className="m-4 grid grid-cols-1 place-content-between justify-items-center space-y-7 rounded-3xl border-2 border-zinc-800 bg-zinc-900 p-4 text-white shadow-lg shadow-black ">
-      <div className="grid grid-cols-1 place-content-between justify-items-center space-y-5 py-2 px-8">
+    <div className="m-4 grid w-auto grid-cols-1 place-content-between justify-items-center space-y-7 rounded-3xl border-2 border-zinc-800 bg-zinc-900 p-4 text-white shadow-lg shadow-black ">
+      <div className="grid grid-cols-1 place-content-between justify-items-center space-y-5 py-2 px-4">
         <Image
           className="rounded-3xl shadow-md shadow-black"
           src={"/myAvatar.png"}
