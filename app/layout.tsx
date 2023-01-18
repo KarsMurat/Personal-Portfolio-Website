@@ -24,7 +24,7 @@ export default function RootLayout({
             </div>
           </div>
           <div className="relative w-8/12 overflow-y-scroll">
-            <div className="m-8 grid min-h-[93%] flex-1 grid-cols-1 place-content-between justify-items-center space-y-4 rounded-lg border-2 border-zinc-800 bg-zinc-900 p-8 shadow-xl shadow-black">
+            <div className="m-8 grid min-h-[93%] flex-1 grid-cols-1 place-content-between space-y-4 rounded-lg border-2 border-zinc-800 bg-zinc-900 p-8 shadow-xl shadow-black">
               {children}
               <Footer />
             </div>
