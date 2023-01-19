@@ -11,10 +11,10 @@ function PersonalCard() {
       <div className="grid grid-cols-1 place-content-between justify-items-center space-y-5">
         <Image
           className="rounded-3xl shadow-md shadow-black"
-          src={"/myAvatar.png"}
+          src={"/img/myAvatar.png"}
           width={175}
           height={175}
-          alt="myAvatar"
+          alt="img/myAvatar"
         />
         <div className="space-y-5">
           <div className="grid justify-items-center text-4xl">
@@ -30,10 +30,10 @@ function PersonalCard() {
         <div className="flex-col-2 flex items-center justify-items-center space-x-3">
           <Image
             className="rounded-md"
-            src={"/myAvatar.png"}
+            src={"/img/myAvatar.png"}
             width={40}
             height={40}
-            alt="myAvatar"
+            alt="img/myAvatar"
           />
           <div className="flex flex-col">
             <p className="text-zinc-400">Mail</p>
@@ -43,10 +43,10 @@ function PersonalCard() {
         <div className="flex-col-2 flex items-center justify-items-center space-x-3">
           <Image
             className="rounded-md"
-            src={"/myAvatar.png"}
+            src={"/img/myAvatar.png"}
             width={40}
             height={40}
-            alt="myAvatar"
+            alt="img/myAvatar"
           />
           <div className="flex flex-col">
             <p className="text-zinc-400">Location</p>
@@ -56,10 +56,10 @@ function PersonalCard() {
         <div className="flex-col-2 flex items-center justify-items-center space-x-3">
           <Image
             className="rounded-md"
-            src={"/myAvatar.png"}
+            src={"/img/myAvatar.png"}
             width={40}
             height={40}
-            alt="myAvatar"
+            alt="img/myAvatar"
           />
           <div className="flex flex-col">
             <p className="text-zinc-400">Local Time</p>
@@ -72,37 +72,37 @@ function PersonalCard() {
         <Link href="https://www.muratkars.live/">
           <Image
             className="rounded-3xl"
-            src={"/myAvatar.png"}
+            src={"/img/myAvatar.png"}
             width={20}
             height={20}
-            alt="myAvatar"
+            alt="img/myAvatar"
           />
         </Link>
         <Link href="https://www.muratkars.live/">
           <Image
             className="rounded-3xl"
-            src={"/myAvatar.png"}
+            src={"/img/myAvatar.png"}
             width={20}
             height={20}
-            alt="myAvatar"
+            alt="img/myAvatar"
           />
         </Link>
         <Link href="https://www.muratkars.live/">
           <Image
             className="rounded-3xl"
-            src={"/myAvatar.png"}
+            src={"/img/myAvatar.png"}
             width={20}
             height={20}
-            alt="myAvatar"
+            alt="img/myAvatar"
           />
         </Link>
         <Link href="https://www.muratkars.live/">
           <Image
             className="rounded-3xl"
-            src={"/myAvatar.png"}
+            src={"/img/myAvatar.png"}
             width={20}
             height={20}
-            alt="myAvatar"
+            alt="img/myAvatar"
           />
         </Link>
       </div>
