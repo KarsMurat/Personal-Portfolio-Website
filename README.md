@@ -1,8 +1,91 @@
+# 🌍 This is gonna be my personal portfolio website
+
+- 📚 Built with [Next.js](https://nextjs.org), [React](https://reactjs.org), and [TypeScript](https://www.typescriptlang.org)
+- 🎨 Styled with [Tailwind](https://tailwindcss.com)
+- 💽 Hosted on [Vercel](https://vercel.com)
+
+---
+
+## ⭐ Lighthouse
+
+Captured at Jan 19, 2023, 4:15 AM GMT+3
+
+<a href="https://googlechrome.github.io/lighthouse/viewer/?gist=438baa75e1de3ad80f829f6659a76936"><img src="https://personal-portfolio-website.muratkars.live/img/personal-website.muratkars.live_2023-01-19_04-15-46.lighthouse.report.jpg"  alt="lighthouse"></a>
+
+---
+
+## TODO
+
+- [ ] Adding Spotify API Get Currently Playing Track
+- [ ] Contact System
+- [ ] Guestbook System
+- [ ] Search System
+
+- [ ] Multi-theme Support
+
+  - [ ] Light
+  - [ ] Dark
+  - [ ] System
+  - [ ] Others
+
+- [ ] Multi-language Support
+
+  - [ ] English
+  - [ ] Japanese
+  - [ ] Turkish
+
+- [ ] Blog System
+
+  - [ ] Blog Post
+  - [ ] Blog Post List
+  - [ ] Blog Post Search
+  - [ ] Blog Post Category
+  - [ ] Blog Post Tag
+
+- [ ] Responsive Design
+- [ ] PWA
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Installation
 
-First, run the development server:
+Clone this repository, then install all dependencies.
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm
+```
+
+## Running locally
+
+- ###### Clone this repository
+
+```bash
+git clone https://github.com/KarsMurat/Personal-Website.git
+```
+
+- ###### Change directory
+
+```bash
+cd Personal-Website
+```
+
+- ###### Install dependencies
+
+```bash
+npm install
+# or
+yarn
+# or
+pnpm
+```
+
+- ###### Start development mode:
 
 ```bash
 npm run dev
@@ -12,27 +95,13 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🍰 Contributing
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+###### Don't forget to give this project a ⭐ star!
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Fork the Project
+- Commit your Changes (git commit -m 'Add a feature')
+- Push to the Branch (git push)
+- Open a Pull Request
