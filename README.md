@@ -1,6 +1,6 @@
 # 🌍 This is gonna be my personal portfolio website
 
-- 📚 Built with [Next.js](https://nextjs.org), [React](https://reactjs.org), and [TypeScript](https://www.typescriptlang.org)
+- 📚 Built with [Next.js](https://nextjs.org), [React](https://reactjs.org)
 - 🎨 Styled with [Tailwind](https://tailwindcss.com)
 - 💽 Hosted on [Vercel](https://vercel.com)
 
@@ -16,23 +16,14 @@ Captured at Jan 19, 2023, 4:15 AM GMT+3
 
 ## TODO
 
-- [ ] Adding Spotify API Get Currently Playing Track
+- [ ] Spotify API
 - [ ] Contact System
 - [ ] Guestbook System
 - [ ] Search System
 
 - [ ] Multi-theme Support
 
-  - [ ] Light
-  - [ ] Dark
-  - [ ] System
-  - [ ] Others
-
 - [ ] Multi-language Support
-
-  - [ ] English
-  - [ ] Japanese
-  - [ ] Turkish
 
 - [ ] Blog System
 
@@ -66,13 +57,13 @@ pnpm
 - ###### Clone this repository
 
 ```bash
-git clone https://github.com/KarsMurat/Personal-Website.git
+git clone https://github.com/KarsMurat/Personal-Portfolio-Website.git
 ```
 
 - ###### Change directory
 
 ```bash
-cd Personal-Website
+cd Personal-Portfolio-Website
 ```
 
 - ###### Install dependencies
