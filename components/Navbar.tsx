@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const NavbarItems = [
   { name: "Home", path: "/" },
@@ -8,13 +11,25 @@ const NavbarItems = [
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
+
   return (
-    <div className="m-4 space-x-4 rounded-md border-2 border-zinc-700 bg-zinc-800 p-1 px-3 font-semibold text-zinc-400 shadow-md shadow-black">
-      {NavbarItems.map((item) => (
-        <Link href={item.path} key={item.name}>
-          {item.name}
-        </Link>
-      ))}
+    <div className="m-4 space-x-4 rounded-tr-md rounded-bl-md border-2 border-zinc-800 bg-zinc-800 p-1 px-3 text-xl font-semibold text-zinc-400 shadow-inner shadow-black">
+      {NavbarItems.map((item) => {
+        const { name, path } = item;
+
+        return (
+          <Link
+            href={path}
+            key={name}
+            className={`${
+              pathname === item.path ? "text-white" : ""
+            }`}
+          >
+            {item.name}
+          </Link>
+        );
+      })}
     </div>
   );
 }
