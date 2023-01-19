@@ -1,6 +1,34 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const SocialMedia = [
+  {
+    title: "Github",
+    url: "https://www.muratkars.live/",
+    icon: "/img/myAvatar.png",
+  },
+  {
+    title: "LinkedIn",
+    url: "https://www.muratkars.live/",
+    icon: "/img/myAvatar.png",
+  },
+  {
+    title: "Twitter",
+    url: "https://www.muratkars.live/",
+    icon: "/img/myAvatar.png",
+  },
+];
+
+const Info = [
+  { title: "Mail", desc: "mail@mail.com", icon: "/img/myAvatar.png" },
+  { title: "Location", desc: "Istanbul", icon: "/img/myAvatar.png" },
+  {
+    title: "Local Time",
+    desc: "19:59 (UTC +03:00)",
+    icon: "/img/myAvatar.png",
+  },
+];
+
 function Divide() {
   return <div className="h-1 w-full rounded-full bg-zinc-800" />;
 }
@@ -27,86 +55,41 @@ function PersonalCard() {
       </div>
       <Divide />
       <div className="grid grid-cols-1 space-y-3">
-        <div className="flex-col-2 flex items-center justify-items-center space-x-3">
-          <Image
-            className="rounded-md"
-            src={"/img/myAvatar.png"}
-            width={40}
-            height={40}
-            alt="img/myAvatar"
-          />
-          <div className="flex flex-col">
-            <p className="text-zinc-400">Mail</p>
-            <p>mail@mail.com</p>
+        {Info.map((item) => (
+          <div
+            key={item.title}
+            className="flex-col-2 flex items-center justify-items-center space-x-3"
+          >
+            <Image
+              className="rounded-md"
+              src={item.icon}
+              width={40}
+              height={40}
+              alt={item.icon}
+            />
+            <div className="flex flex-col">
+              <p className="text-zinc-400">{item.title}</p>
+              <p>{item.desc}</p>
+            </div>
           </div>
-        </div>
-        <div className="flex-col-2 flex items-center justify-items-center space-x-3">
-          <Image
-            className="rounded-md"
-            src={"/img/myAvatar.png"}
-            width={40}
-            height={40}
-            alt="img/myAvatar"
-          />
-          <div className="flex flex-col">
-            <p className="text-zinc-400">Location</p>
-            <p>Istanbul</p>
-          </div>
-        </div>
-        <div className="flex-col-2 flex items-center justify-items-center space-x-3">
-          <Image
-            className="rounded-md"
-            src={"/img/myAvatar.png"}
-            width={40}
-            height={40}
-            alt="img/myAvatar"
-          />
-          <div className="flex flex-col">
-            <p className="text-zinc-400">Local Time</p>
-            <p>19:59 (UTC +03:00)</p>
-          </div>
-        </div>
+        ))}
       </div>
       <Divide />
       <div className="flex space-x-3">
-        <Link href="https://www.muratkars.live/">
-          <Image
-            className="rounded-3xl"
-            src={"/img/myAvatar.png"}
-            width={20}
-            height={20}
-            alt="img/myAvatar"
-          />
-        </Link>
-        <Link href="https://www.muratkars.live/">
-          <Image
-            className="rounded-3xl"
-            src={"/img/myAvatar.png"}
-            width={20}
-            height={20}
-            alt="img/myAvatar"
-          />
-        </Link>
-        <Link href="https://www.muratkars.live/">
-          <Image
-            className="rounded-3xl"
-            src={"/img/myAvatar.png"}
-            width={20}
-            height={20}
-            alt="img/myAvatar"
-          />
-        </Link>
-        <Link href="https://www.muratkars.live/">
-          <Image
-            className="rounded-3xl"
-            src={"/img/myAvatar.png"}
-            width={20}
-            height={20}
-            alt="img/myAvatar"
-          />
-        </Link>
+        {SocialMedia.map((item) => (
+          <Link key={item.title} href={item.url}>
+            <Image
+              className="rounded-3xl"
+              src={item.icon}
+              width={20}
+              height={20}
+              alt={item.title}
+            />
+          </Link>
+        ))}
       </div>
     </div>
   );
 }
+
 export default PersonalCard;
