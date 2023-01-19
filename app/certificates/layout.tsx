@@ -4,7 +4,7 @@ export default function CertificatesLayout({
   children: React.ReactNode;
 }) {
   function Divide() {
-    return <div className="h-1 w-auto rounded-full bg-zinc-800" />;
+    return <div className="h-1 w-1/4 rounded-full bg-zinc-800" />;
   }
 
   return (
