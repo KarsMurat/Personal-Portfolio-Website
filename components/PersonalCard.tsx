@@ -55,38 +55,46 @@ function PersonalCard() {
       </div>
       <Divide />
       <div className="grid grid-cols-1 space-y-3">
-        {Info.map((item) => (
-          <div
-            key={item.title}
-            className="flex-col-2 flex items-center justify-items-center space-x-3"
-          >
-            <Image
-              className="rounded-md"
-              src={item.icon}
-              width={40}
-              height={40}
-              alt={item.icon}
-            />
-            <div className="flex flex-col">
-              <p className="text-zinc-400">{item.title}</p>
-              <p>{item.desc}</p>
+        {Info.map((item) => {
+          const { title, desc, icon } = item;
+
+          return (
+            <div
+              key={title}
+              className="flex-col-2 flex items-center justify-items-center space-x-3"
+            >
+              <Image
+                className="rounded-md"
+                src={icon}
+                width={40}
+                height={40}
+                alt={icon}
+              />
+              <div className="flex flex-col">
+                <p className="text-zinc-400">{title}</p>
+                <p>{desc}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
       <Divide />
       <div className="flex space-x-3">
-        {SocialMedia.map((item) => (
-          <Link key={item.title} href={item.url}>
-            <Image
-              className="rounded-3xl"
-              src={item.icon}
-              width={20}
-              height={20}
-              alt={item.title}
-            />
-          </Link>
-        ))}
+        {SocialMedia.map((item) => {
+          const { title, url, icon } = item;
+
+          return (
+            <Link key={title} href={url}>
+              <Image
+                className="rounded-3xl"
+                src={icon}
+                width={20}
+                height={20}
+                alt={title}
+              />
+            </Link>
+          );
+        })}
       </div>
     </div>
   );
