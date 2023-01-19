@@ -22,11 +22,9 @@ export default function Navbar() {
           <Link
             href={path}
             key={name}
-            className={`${
-              pathname === item.path ? "text-white" : ""
-            }`}
+            className={`${pathname === path ? "text-white" : ""}`}
           >
-            {item.name}
+            {name}
           </Link>
         );
       })}
