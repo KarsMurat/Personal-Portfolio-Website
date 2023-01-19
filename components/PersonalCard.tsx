@@ -69,7 +69,7 @@ function PersonalCard() {
       </div>
       <Divide />
       <div className="flex space-x-3">
-        <Link href={"https://www.linkedin.com/in/KarsMurat/"}>
+        <Link href="https://www.muratkars.live/">
           <Image
             className="rounded-3xl"
             src={"/myAvatar.png"}
@@ -78,7 +78,7 @@ function PersonalCard() {
             alt="myAvatar"
           />
         </Link>
-        <Link href={"https://www.linkedin.com/in/KarsMurat/"}>
+        <Link href="https://www.muratkars.live/">
           <Image
             className="rounded-3xl"
             src={"/myAvatar.png"}
@@ -87,7 +87,7 @@ function PersonalCard() {
             alt="myAvatar"
           />
         </Link>
-        <Link href={"https://www.linkedin.com/in/KarsMurat/"}>
+        <Link href="https://www.muratkars.live/">
           <Image
             className="rounded-3xl"
             src={"/myAvatar.png"}
@@ -96,7 +96,7 @@ function PersonalCard() {
             alt="myAvatar"
           />
         </Link>
-        <Link href={"https://www.linkedin.com/in/KarsMurat/"}>
+        <Link href="https://www.muratkars.live/">
           <Image
             className="rounded-3xl"
             src={"/myAvatar.png"}
