@@ -10,7 +10,7 @@ export default function CertificatesLayout({
   return (
     <section>
       <div className="static">
-        <div className="static -mt-3 -ml-3 text-3xl text-zinc-400">
+        <div className="static -mt-3 -ml-3 text-3xl font-bold text-white">
           <p>My certificates</p>
           <Divide />
         </div>
