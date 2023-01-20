@@ -19,11 +19,11 @@ export default function RootLayout({
       <body className="h-screen w-screen justify-items-center bg-zinc-900">
         <div className="sticky flex h-full justify-center">
           <div className="relative w-8/12 overflow-y-scroll">
-            <div className="m-8 grid min-h-[93%] flex-1 grid-cols-1 place-content-between space-y-4 rounded-lg border-2 border-zinc-800 bg-zinc-900 p-8 shadow-xl shadow-black">
-              <div className="mt-4">{children}</div>
-              <div className="absolute top-0 right-4">
+            <div className="m-8 grid min-h-[93%] grid-cols-1 place-content-between space-y-4 rounded-lg border-2 border-zinc-800 bg-zinc-900 p-8 shadow-xl shadow-black">
+              <div className="absolute top-4 right-4">
                 <Navbar />
               </div>
+              <div className="mt-4">{children}</div>
               <Footer />
             </div>
           </div>

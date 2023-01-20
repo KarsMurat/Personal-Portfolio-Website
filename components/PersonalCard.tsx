@@ -61,7 +61,7 @@ function PersonalCard() {
           return (
             <div
               key={title}
-              className="flex-col-2 flex items-center justify-items-center space-x-3"
+              className="flex items-center justify-items-center space-x-3"
             >
               <Image
                 className="rounded-md"
