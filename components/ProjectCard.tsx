@@ -42,19 +42,27 @@ export default function ProjectCard() {
           const { title, desc, path, url, img } = item;
 
           return (
-            <div key={index} className="w-1/4">
-              <div className="h-1/4 overflow-hidden rounded-xl border-zinc-500 bg-cover transition duration-1000 hover:scale-95 hover:border-2">
+            <div key={index} className="grid w-full grid-cols-2">
+              <div className="flex items-center justify-center rounded-xl border-zinc-500">
                 <Link href={path}>
-                  <Image
-                    className="transform rounded-xl transition 
+                  <div
+                    className="overflow-hidden rounded-xl 
+            duration-1000 hover:scale-95"
+                  >
+                    <Image
+                      className="rounded-xl 
             duration-700 hover:scale-150 hover:grayscale"
-                    src={img}
-                    alt={title}
-                  />
+                      src={img}
+                      alt={title}
+                    />
+                  </div>
                 </Link>
+                <div className="m-2 flex flex-col items-center justify-center rounded-lg border-2 border-zinc-800 bg-zinc-900 p-2 text-xs shadow-md shadow-black hover:border-2 hover:border-zinc-700">
+                  <div>{title}</div>
+                  <div>{desc}</div>
+                  <Link href={url}>{url}</Link>
+                </div>
               </div>
-              <div>{desc}</div>
-              <Link href={url}>{url}</Link>
             </div>
           );
         })}
