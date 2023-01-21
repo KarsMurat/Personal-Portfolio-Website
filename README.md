@@ -14,7 +14,7 @@ Captured at Jan 19, 2023, 4:15 AM GMT+3
 
 ---
 
-## TODO
+## Features
 
 - [ ] Spotify API
 - [ ] Contact System
@@ -38,19 +38,7 @@ Captured at Jan 19, 2023, 4:15 AM GMT+3
 
 ---
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Installation
-
-Clone this repository, then install all dependencies.
-
-```bash
-npm install
-# or
-yarn install
-# or
-pnpm
-```
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
 
 ## Running locally
 
@@ -73,7 +61,7 @@ npm install
 # or
 yarn
 # or
-pnpm
+pnpm install
 ```
 
 - ###### Start development mode:
