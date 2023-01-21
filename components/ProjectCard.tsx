@@ -146,45 +146,65 @@ const Projects = [
 
 export default function ProjectCard() {
   return (
-    <div className="p-4">
-      <div className="flex w-full flex-wrap items-center justify-center gap-6">
-        {Projects.map((item, index) => {
-          const { title, desc, path, img, tools } = item;
+    <div className="flex w-full flex-wrap items-center justify-center gap-6 p-6">
+      {Projects.map((project, index) => {
+        const { title, desc, path, img, tools } = project;
 
-          return (
-            <div
-              key={index}
-              className="relative mx-auto flex max-h-fit max-w-md items-center overflow-visible rounded-xl bg-zinc-900 shadow-md shadow-black
-              ring-2 ring-zinc-800 duration-300 hover:scale-110 hover:ring-1 hover:ring-white"
+        return (
+          <div
+            key={index}
+            className="relative mx-auto flex max-h-fit max-w-md items-center overflow-visible rounded-xl bg-zinc-900 shadow-md shadow-black
+              ring-2 ring-zinc-800 duration-300 hover:scale-95 hover:ring-1 hover:ring-white"
+          >
+            <Link
+              href={path}
+              className="absolute -left-16 h-36 w-36 skew-x-6 overflow-hidden rounded-3xl border-2 border-zinc-800 duration-700 hover:skew-x-0 hover:scale-150 hover:border-0 hover:ring-1 hover:ring-white"
             >
-              <Link
-                href={path}
-                className="absolute -left-16 h-36 w-36"
-              >
-                <Image
-                  src={img}
-                  alt={title}
-                  className="rounded-3xl shadow-sm shadow-black duration-700 hover:scale-150 hover:grayscale"
-                />
-              </Link>
-              <div className="flex flex-col space-y-6 p-4 pl-24">
-                <strong className="text-sm font-medium text-slate-200">
-                  {title}
-                </strong>
-                <span className="text-sm font-medium text-gray-500">
-                  {desc}
-                </span>
-                <div className="flex flex-wrap items-center gap-1">
-                  {tools.map((item, index) => {
-                    const { name, icon } = item;
+              <Image
+                src={img}
+                alt={title}
+                className="rounded-2xl shadow-sm shadow-black duration-700 hover:scale-150 hover:grayscale"
+              />
+            </Link>
+            <div className="flex flex-col space-y-6 p-4 pl-24">
+              <strong className="flex justify-center text-sm font-medium text-slate-200">
+                {title}
+              </strong>
+              <span className="text-sm font-medium text-gray-500">
+                {desc}
+              </span>
+              <div className="flex flex-wrap justify-center gap-1">
+                {tools.map((project, index) => {
+                  const { name, icon } = project;
+                  return (
+                    <div
+                      key={index}
+                      className="flex space-x-1 rounded-sm bg-zinc-700 px-2 py-1"
+                    >
+                      <span className="text-xs text-black">
+                        {name}
+                      </span>
+                      <Image
+                        src={icon}
+                        alt={name}
+                        height={20}
+                        width={20}
+                        className="rounded-full"
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+              <span className="text-sm font-medium text-cyan-700">
+                <div className="flex justify-end space-x-2">
+                  {project.link.map((project, index) => {
+                    const { icon, name, url } = project;
+
                     return (
                       <div
                         key={index}
-                        className="flex space-x-1 rounded-sm bg-zinc-800 px-2 py-1"
+                        className="flex space-x-1 rounded-full bg-zinc-800 px-2 py-1"
                       >
-                        <span className="text-xs text-neutral-500">
-                          {name}
-                        </span>
                         <Image
                           src={icon}
                           alt={name}
@@ -192,35 +212,16 @@ export default function ProjectCard() {
                           width={20}
                           className="rounded-full"
                         />
+                        <Link href={url}>{name}</Link>
                       </div>
                     );
                   })}
                 </div>
-                <span className="text-sm font-medium text-cyan-900">
-                  <div className="flex justify-end space-x-6">
-                    {item.link.map((item, index) => {
-                      const { icon, name, url } = item;
-
-                      return (
-                        <div key={index} className="flex space-x-1">
-                          <Image
-                            src={icon}
-                            alt={name}
-                            height={20}
-                            width={20}
-                            className="rounded-full"
-                          />
-                          <Link href={url}>{name}</Link>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </span>
-              </div>
+              </span>
             </div>
-          );
-        })}
-      </div>
+          </div>
+        );
+      })}
     </div>
   );
 }
