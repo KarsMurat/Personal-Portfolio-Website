@@ -1,6 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import myAvatar from "../public/img/myAvatar.png";
+
+const Divider = () => (
+  <div className="h-1 w-full rounded-full bg-zinc-800" />
+);
+
+const loremImage = "https://picsum.photos/300";
+const loremIconLink = "https://picsum.photos/100";
+const loremIconTool = "https://picsum.photos/90";
 
 const ProjectsPath = "projects";
 const Projects = [
@@ -11,27 +18,27 @@ const Projects = [
     link: [
       {
         name: "Github",
-        icon: myAvatar,
+        icon: loremIconLink,
         url: "https://github.com/KarsMurat",
       },
       {
         name: "Website",
-        icon: myAvatar,
+        icon: loremIconLink,
         url: "https://www.muratkars.live",
       },
     ],
-    img: myAvatar,
+    img: loremImage,
     tools: [
       {
         name: "React",
-        icon: myAvatar,
+        icon: loremIconTool,
       },
-      { name: "Babel", icon: myAvatar },
-      { name: "TypeScript", icon: myAvatar },
-      { name: "Webpack", icon: myAvatar },
-      { name: "NPM", icon: myAvatar },
-      { name: "Lerna", icon: myAvatar },
-      { name: "Monaco Editor", icon: myAvatar },
+      { name: "Babel", icon: loremIconTool },
+      { name: "TypeScript", icon: loremIconTool },
+      { name: "Webpack", icon: loremIconTool },
+      { name: "NPM", icon: loremIconTool },
+      { name: "Lerna", icon: loremIconTool },
+      { name: "Monaco Editor", icon: loremIconTool },
     ],
   },
   {
@@ -41,25 +48,25 @@ const Projects = [
     link: [
       {
         name: "Github",
-        icon: myAvatar,
+        icon: loremIconLink,
         url: "https://github.com/KarsMurat",
       },
       {
         name: "Website",
-        icon: myAvatar,
+        icon: loremIconLink,
         url: "https://www.muratkars.live",
       },
     ],
-    img: myAvatar,
+    img: loremImage,
     tools: [
       {
         name: "React",
-        icon: myAvatar,
+        icon: loremIconTool,
       },
-      { name: "TypeScript", icon: myAvatar },
-      { name: "NPM", icon: myAvatar },
-      { name: "Lerna", icon: myAvatar },
-      { name: "Monaco Editor", icon: myAvatar },
+      { name: "TypeScript", icon: loremIconTool },
+      { name: "NPM", icon: loremIconTool },
+      { name: "Lerna", icon: loremIconTool },
+      { name: "Monaco Editor", icon: loremIconTool },
     ],
   },
   {
@@ -69,24 +76,24 @@ const Projects = [
     link: [
       {
         name: "Github",
-        icon: myAvatar,
+        icon: loremIconLink,
         url: "https://github.com/KarsMurat",
       },
       {
         name: "Website",
-        icon: myAvatar,
+        icon: loremIconLink,
         url: "https://www.muratkars.live",
       },
     ],
-    img: myAvatar,
+    img: loremImage,
     tools: [
       {
         name: "Webpack",
-        icon: myAvatar,
+        icon: loremIconTool,
       },
-      { name: "NPM", icon: myAvatar },
-      { name: "Lerna", icon: myAvatar },
-      { name: "Monaco Editor", icon: myAvatar },
+      { name: "NPM", icon: loremIconTool },
+      { name: "Lerna", icon: loremIconTool },
+      { name: "Monaco Editor", icon: loremIconTool },
     ],
   },
   {
@@ -96,23 +103,23 @@ const Projects = [
     link: [
       {
         name: "Github",
-        icon: myAvatar,
+        icon: loremIconLink,
         url: "https://github.com/KarsMurat",
       },
       {
         name: "Website",
-        icon: myAvatar,
+        icon: loremIconLink,
         url: "https://www.muratkars.live",
       },
     ],
-    img: myAvatar,
+    img: loremImage,
     tools: [
       {
         name: "React",
-        icon: myAvatar,
+        icon: loremIconTool,
       },
-      { name: "Webpack", icon: myAvatar },
-      { name: "Monaco Editor", icon: myAvatar },
+      { name: "Webpack", icon: loremIconTool },
+      { name: "Monaco Editor", icon: loremIconTool },
     ],
   },
   {
@@ -122,29 +129,29 @@ const Projects = [
     link: [
       {
         name: "Github",
-        icon: myAvatar,
+        icon: loremIconLink,
         url: "https://github.com/KarsMurat",
       },
       {
         name: "Website",
-        icon: myAvatar,
+        icon: loremIconLink,
         url: "https://www.muratkars.live",
       },
     ],
-    img: myAvatar,
+    img: loremImage,
     tools: [
       {
         name: "React",
-        icon: myAvatar,
+        icon: loremIconTool,
       },
-      { name: "Babel", icon: myAvatar },
-      { name: "Monaco Editor", icon: myAvatar },
-      { name: "Lerna", icon: myAvatar },
+      { name: "Babel", icon: loremIconTool },
+      { name: "Monaco Editor", icon: loremIconTool },
+      { name: "Lerna", icon: loremIconTool },
     ],
   },
 ];
 
-export default function ProjectCard() {
+function ProjectCard() {
   return (
     <div className="flex w-full flex-wrap items-center justify-center gap-6 p-6">
       {Projects.map((project, index) => {
@@ -163,13 +170,17 @@ export default function ProjectCard() {
               <Image
                 src={img}
                 alt={title}
+                height={300}
+                width={300}
                 className="rounded-2xl shadow-sm shadow-black duration-700 hover:scale-150 hover:grayscale"
               />
             </Link>
             <div className="flex flex-col space-y-6 p-4 pl-24">
-              <strong className="flex justify-center text-sm font-medium text-slate-200">
-                {title}
-              </strong>
+              <div className="flex flex-col">
+                <strong className="flex justify-center text-sm font-medium text-slate-200">
+                  {title}
+                </strong>
+              </div>
               <span className="text-sm font-medium text-gray-500">
                 {desc}
               </span>
@@ -181,7 +192,7 @@ export default function ProjectCard() {
                       key={index}
                       className="flex space-x-1 rounded-sm bg-zinc-700 px-2 py-1"
                     >
-                      <span className="text-xs text-black">
+                      <span className="text-xs text-zinc-400">
                         {name}
                       </span>
                       <Image
@@ -195,7 +206,8 @@ export default function ProjectCard() {
                   );
                 })}
               </div>
-              <span className="text-sm font-medium text-cyan-700">
+              <Divider />
+              <span className="text-sm font-medium text-cyan-600">
                 <div className="flex justify-end space-x-2">
                   {project.link.map((project, index) => {
                     const { icon, name, url } = project;
@@ -203,7 +215,7 @@ export default function ProjectCard() {
                     return (
                       <div
                         key={index}
-                        className="flex space-x-1 rounded-full bg-zinc-800 px-2 py-1"
+                        className="flex space-x-1 rounded-full bg-zinc-800 px-2 py-1 hover:bg-zinc-700"
                       >
                         <Image
                           src={icon}
@@ -212,7 +224,9 @@ export default function ProjectCard() {
                           width={20}
                           className="rounded-full"
                         />
-                        <Link href={url}>{name}</Link>
+                        <Link href={url} target="_blank">
+                          {name}
+                        </Link>
                       </div>
                     );
                   })}
@@ -225,3 +239,5 @@ export default function ProjectCard() {
     </div>
   );
 }
+
+export default ProjectCard;
