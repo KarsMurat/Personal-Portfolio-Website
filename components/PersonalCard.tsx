@@ -1,37 +1,40 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const loremIconInfo = "https://picsum.photos/100";
+const loremIconSocial = "https://picsum.photos/90";
+
+const Info = [
+  { title: "Mail", desc: "mail@mail.com", icon: loremIconInfo },
+  { title: "Location", desc: "Istanbul", icon: loremIconInfo },
+  {
+    title: "Local Time",
+    desc: "19:59 (UTC +03:00)",
+    icon: loremIconInfo,
+  },
+];
+
 const SocialMedia = [
   {
     title: "Github",
     url: "https://www.muratkars.live/",
-    icon: "/img/myAvatar.png",
+    icon: loremIconSocial,
   },
   {
     title: "LinkedIn",
     url: "https://www.muratkars.live/",
-    icon: "/img/myAvatar.png",
+    icon: loremIconSocial,
   },
   {
     title: "Twitter",
     url: "https://www.muratkars.live/",
-    icon: "/img/myAvatar.png",
+    icon: loremIconSocial,
   },
 ];
 
-const Info = [
-  { title: "Mail", desc: "mail@mail.com", icon: "/img/myAvatar.png" },
-  { title: "Location", desc: "Istanbul", icon: "/img/myAvatar.png" },
-  {
-    title: "Local Time",
-    desc: "19:59 (UTC +03:00)",
-    icon: "/img/myAvatar.png",
-  },
-];
-
-function Divide() {
-  return <div className="h-1 w-full rounded-full bg-zinc-800" />;
-}
+const Divider = () => (
+  <div className="h-1 w-full rounded-full bg-zinc-800" />
+);
 
 function PersonalCard() {
   return (
@@ -48,12 +51,17 @@ function PersonalCard() {
           <div className="grid justify-items-center text-4xl">
             Murat Kars
           </div>
-          <div className="grid justify-items-center rounded-md bg-zinc-600 p-1 px-3 text-sm text-neutral-200 shadow-inner shadow-black">
-            Junior Web Developer
+          <div className="group grid cursor-pointer grid-cols-1 -space-y-7">
+            <div className="z-10 grid justify-items-center rounded-md bg-zinc-700 p-1 px-3 text-sm text-neutral-200 shadow-inner shadow-black">
+              Fullstack Learner
+            </div>
+            <div className="z-20 grid justify-items-center rounded-md bg-zinc-800 p-1 px-3 text-sm text-neutral-200 shadow duration-500 group-hover:my-1 group-hover:shadow-black">
+              Junior Web Developer
+            </div>
           </div>
         </div>
+        <Divider />
       </div>
-      <Divide />
       <div className="grid grid-cols-1 space-y-3">
         {Info.map((item) => {
           const { title, desc, icon } = item;
@@ -78,13 +86,13 @@ function PersonalCard() {
           );
         })}
       </div>
-      <Divide />
+      <Divider />
       <div className="flex space-x-3">
         {SocialMedia.map((item) => {
           const { title, url, icon } = item;
 
           return (
-            <Link key={title} href={url}>
+            <Link key={title} href={url} target="_blank">
               <Image
                 className="rounded-3xl"
                 src={icon}
