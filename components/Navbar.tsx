@@ -14,7 +14,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="m-4 space-x-4 rounded-tr-md rounded-bl-md border-2 border-zinc-800 bg-zinc-800 p-1 px-3 text-xl font-semibold text-zinc-400 shadow-inner shadow-black">
+    <div className="m-4 space-x-4 rounded-tr-md rounded-bl-md border-2 border-zinc-800 bg-zinc-800 p-2 px-6 text-xl font-semibold text-zinc-400 shadow-inner shadow-black">
       {NavbarItems.map((item) => {
         const { name, path } = item;
 
