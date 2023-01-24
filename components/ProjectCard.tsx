@@ -163,6 +163,11 @@ function ProjectCard() {
             className="relative mx-auto flex max-h-fit max-w-md items-center overflow-visible rounded-xl bg-zinc-900 shadow-md shadow-black
               ring-2 ring-zinc-800 duration-300 hover:scale-95 hover:ring-1 hover:ring-white"
           >
+            <Link href={path}>
+              <div className="absolute -top-3 -right-3 m-1 rounded-lg bg-zinc-800 p-1 px-3 text-zinc-300 hover:scale-125">
+                GO
+              </div>
+            </Link>
             <Link
               href={path}
               className="absolute -left-16 h-36 w-36 skew-x-6 overflow-hidden rounded-3xl border-2 border-zinc-800 duration-700 hover:skew-x-0 hover:scale-150 hover:border-0 hover:ring-1 hover:ring-white"
