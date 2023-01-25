@@ -38,7 +38,7 @@ const Divider = () => (
 
 function PersonalCard() {
   return (
-    <div className="m-4 grid w-56 grid-cols-1 place-content-between justify-items-center space-y-7 rounded-3xl border-2 border-zinc-800 bg-zinc-900 p-4 text-white shadow-lg shadow-black ">
+    <div className="m-4 grid w-56 cursor-default grid-cols-1 place-content-between justify-items-center space-y-7 rounded-3xl border-2 border-zinc-800 bg-zinc-900 p-4 text-white shadow-lg shadow-black ">
       <div className="grid grid-cols-1 place-content-between justify-items-center space-y-5">
         <Image
           className="rounded-3xl shadow-md shadow-black"
