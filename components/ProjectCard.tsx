@@ -160,11 +160,11 @@ function ProjectCard() {
         return (
           <div
             key={index}
-            className="relative mx-auto flex max-h-fit max-w-md items-center overflow-visible rounded-xl bg-zinc-900 shadow-md shadow-black
+            className="relative mx-auto flex max-h-fit max-w-md cursor-default items-center overflow-visible rounded-xl bg-zinc-900 shadow-md shadow-black
               ring-2 ring-zinc-800 duration-300 hover:scale-95 hover:ring-1 hover:ring-white"
           >
             <Link href={path}>
-              <div className="absolute -top-3 -right-3 m-1 rounded-lg bg-zinc-800 p-1 px-3 text-zinc-300 hover:scale-125">
+              <div className="absolute -top-3 -right-3 m-1 rounded-lg bg-zinc-800 p-1 px-3 text-zinc-300 duration-200 hover:scale-125">
                 GO
               </div>
             </Link>
@@ -218,8 +218,10 @@ function ProjectCard() {
                     const { icon, name, url } = project;
 
                     return (
-                      <div
+                      <Link
                         key={index}
+                        href={url}
+                        target="_blank"
                         className="flex space-x-1 rounded-full bg-zinc-800 px-2 py-1 hover:bg-zinc-700"
                       >
                         <Image
@@ -229,10 +231,8 @@ function ProjectCard() {
                           width={20}
                           className="rounded-full"
                         />
-                        <Link href={url} target="_blank">
-                          {name}
-                        </Link>
-                      </div>
+                        <div>{name}</div>
+                      </Link>
                     );
                   })}
                 </div>
