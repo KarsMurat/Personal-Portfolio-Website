@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <form className="w-full">
+    <form className="grid w-full grid-cols-1  justify-items-center">
       <div className="-mx-3 mb-6 flex flex-wrap">
         <div className="mb-6 w-full px-3 md:mb-0">
           <label
@@ -56,7 +56,7 @@ export default function Contact() {
             Message
           </label>
           <textarea
-            className=" no-resize mb-3 block h-48 w-full resize-none appearance-none rounded border border-gray-200 bg-gray-200 py-3 px-4 leading-tight text-white focus:border-gray-500 focus:bg-white focus:outline-none"
+            className=" no-resize mb-3 block h-48 w-full appearance-none rounded border border-gray-200 bg-gray-200 py-3 px-4 leading-tight text-white focus:border-gray-500 focus:bg-white focus:outline-none"
             id="message"
           />
         </div>
