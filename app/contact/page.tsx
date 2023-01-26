@@ -1,17 +1,77 @@
 export default function Contact() {
   return (
-    <p className="text-3xl text-zinc-300">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-      Aspernatur provident reiciendis impedit laudantium porro cum
-      sunt temporibus eos quis nemo natus autem delectus eligendi a
-      modi sapiente deserunt, amet illo! Distinctio voluptatibus eaque
-      autem voluptate. Libero nihil accusamus quasi eveniet minus
-      eius, facere veritatis minima maiores eos nesciunt iste quas
-      perspiciatis quidem, voluptatibus provident temporibus officiis,
-      recusandae itaque quae ut? Ipsum inventore sapiente beatae ullam
-      blanditiis eos, pariatur iste! Perspiciatis harum, cupiditate id
-      molestiae iure expedita quos dolor blanditiis quaerat? Illum,
-      fuga.
-    </p>
+    <form className="w-full">
+      <div className="-mx-3 mb-6 flex flex-wrap">
+        <div className="mb-6 w-full px-3 md:mb-0">
+          <label
+            className="mb-2 block text-xs font-bold uppercase tracking-wide text-white"
+            htmlFor="grid-first-name"
+          >
+            Name
+          </label>
+          <input
+            className="mb-3 block w-full appearance-none rounded border bg-gray-200 py-3 px-4 leading-tight text-white focus:bg-white focus:outline-none"
+            id="grid-first-name"
+            type="text"
+            placeholder="Jane"
+          />
+        </div>
+      </div>
+      <div className="-mx-3 mb-6 flex flex-wrap">
+        <div className="w-full px-3">
+          <label
+            className="mb-2 block text-xs font-bold uppercase tracking-wide text-white"
+            htmlFor="grid-password"
+          >
+            E-mail
+          </label>
+          <input
+            className="mb-3 block w-full appearance-none rounded border border-gray-200 bg-gray-200 py-3 px-4 leading-tight text-white focus:border-gray-500 focus:bg-white focus:outline-none"
+            id="email"
+            type="email"
+          />
+        </div>
+      </div>
+      <div className="-mx-3 mb-6 flex flex-wrap">
+        <div className="w-full px-3">
+          <label
+            className="mb-2 block text-xs font-bold uppercase tracking-wide text-white"
+            htmlFor="grid-password"
+          >
+            Subject
+          </label>
+          <input
+            className="mb-3 block w-full appearance-none rounded border border-gray-200 bg-gray-200 py-3 px-4 leading-tight text-white focus:border-gray-500 focus:bg-white focus:outline-none"
+            id="subject"
+            type="subject"
+          />
+        </div>
+      </div>
+      <div className="-mx-3 mb-6 flex flex-wrap">
+        <div className="w-full px-3">
+          <label
+            className="mb-2 block text-xs font-bold uppercase tracking-wide text-white"
+            htmlFor="grid-password"
+          >
+            Message
+          </label>
+          <textarea
+            className=" no-resize mb-3 block h-48 w-full resize-none appearance-none rounded border border-gray-200 bg-gray-200 py-3 px-4 leading-tight text-white focus:border-gray-500 focus:bg-white focus:outline-none"
+            id="message"
+          />
+        </div>
+      </div>
+      <div className="md:flex md:items-center">
+        <div className="md:w-1/3">
+          <button
+            className="focus:shadow-outline rounded bg-zinc-800 py-2 px-4 font-bold text-white shadow hover:bg-zinc-700 focus:outline-none"
+            type="button"
+          >
+            Send
+          </button>
+        </div>
+        <div className="md:w-2/3"></div>
+      </div>
+    </form>
   );
 }
