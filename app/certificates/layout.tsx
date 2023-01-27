@@ -14,7 +14,9 @@ export default function CertificatesLayout({
           <p>My certificates</p>
           <Divide />
         </div>
-        <div className="mt-5 inline-block">{children}</div>
+        <div className="mt-5 inline-block h-full w-full py-5">
+          {children}
+        </div>
       </div>
     </section>
   );

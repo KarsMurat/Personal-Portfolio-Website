@@ -1,71 +1,79 @@
 export default function Contact() {
   return (
-    <form className="grid w-full grid-cols-1  justify-items-center">
-      <div className="-mx-3 mb-6 flex flex-wrap">
-        <div className="mb-6 w-full px-3 md:mb-0">
+    <form className="grid w-full grid-cols-1 place-content-between space-y-7 px-20">
+      <div className="flex flex-wrap">
+        <div className="w-full space-y-2">
           <label
-            className="mb-2 block text-xs font-bold uppercase tracking-wide text-white"
-            htmlFor="grid-first-name"
+            className="block text-xs font-bold uppercase tracking-wide text-white"
+            htmlFor="name"
           >
             Name
           </label>
           <input
-            className="mb-3 block w-full appearance-none rounded border bg-gray-200 py-3 px-4 leading-tight text-white focus:bg-white focus:outline-none"
-            id="grid-first-name"
+            required
+            className="block w-full rounded border bg-zinc-300 py-3 px-4 focus:bg-white"
+            id="name"
             type="text"
-            placeholder="Jane"
+            placeholder="Your Name"
           />
         </div>
       </div>
-      <div className="-mx-3 mb-6 flex flex-wrap">
-        <div className="w-full px-3">
+      <div className="flex flex-wrap">
+        <div className="w-full space-y-2">
           <label
-            className="mb-2 block text-xs font-bold uppercase tracking-wide text-white"
-            htmlFor="grid-password"
+            className="block text-xs font-bold uppercase tracking-wide text-white"
+            htmlFor="email"
           >
             E-mail
           </label>
           <input
-            className="mb-3 block w-full appearance-none rounded border border-gray-200 bg-gray-200 py-3 px-4 leading-tight text-white focus:border-gray-500 focus:bg-white focus:outline-none"
+            required
+            className="block w-full rounded border bg-zinc-300 py-3 px-4 focus:bg-white"
             id="email"
             type="email"
+            placeholder="Your E-mail"
           />
         </div>
       </div>
-      <div className="-mx-3 mb-6 flex flex-wrap">
-        <div className="w-full px-3">
+      <div className="flex flex-wrap">
+        <div className="w-full space-y-2">
           <label
-            className="mb-2 block text-xs font-bold uppercase tracking-wide text-white"
-            htmlFor="grid-password"
+            className="block text-xs font-bold uppercase tracking-wide text-white"
+            htmlFor="subject"
           >
             Subject
           </label>
           <input
-            className="mb-3 block w-full appearance-none rounded border border-gray-200 bg-gray-200 py-3 px-4 leading-tight text-white focus:border-gray-500 focus:bg-white focus:outline-none"
+            required
+            className="block w-full rounded border bg-zinc-300 py-3 px-4 focus:bg-white"
             id="subject"
             type="subject"
+            placeholder="Subject of Your Message"
           />
         </div>
       </div>
-      <div className="-mx-3 mb-6 flex flex-wrap">
-        <div className="w-full px-3">
+      <div className="flex flex-wrap">
+        <div className="w-full space-y-2">
           <label
-            className="mb-2 block text-xs font-bold uppercase tracking-wide text-white"
-            htmlFor="grid-password"
+            className="block text-xs font-bold uppercase tracking-wide text-white"
+            htmlFor="message"
           >
             Message
           </label>
           <textarea
-            className=" no-resize mb-3 block h-48 w-full appearance-none rounded border border-gray-200 bg-gray-200 py-3 px-4 leading-tight text-white focus:border-gray-500 focus:bg-white focus:outline-none"
+            required
+            rows={5}
+            className="block w-full rounded border bg-zinc-300 py-3 px-4 focus:bg-white"
             id="message"
+            placeholder="Your Message"
           />
         </div>
       </div>
-      <div className="md:flex md:items-center">
+      <div className="justify-self-center md:flex md:items-center ">
         <div className="md:w-1/3">
           <button
             className="focus:shadow-outline rounded bg-zinc-800 py-2 px-4 font-bold text-white shadow hover:bg-zinc-700 focus:outline-none"
-            type="button"
+            type="submit"
           >
             Send
           </button>

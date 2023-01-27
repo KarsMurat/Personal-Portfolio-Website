@@ -14,7 +14,9 @@ export default function ContactLayout({
           <p>Contact with me</p>
           <Divide />
         </div>
-        <div className="mt-5 inline-block w-full">{children}</div>
+        <div className="mt-5 inline-block h-full w-full py-5">
+          {children}
+        </div>
       </div>
     </section>
   );
