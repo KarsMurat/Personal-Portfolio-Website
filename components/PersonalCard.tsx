@@ -51,12 +51,15 @@ function PersonalCard() {
           <div className="grid justify-items-center text-4xl">
             Murat Kars
           </div>
-          <div className="group grid cursor-pointer grid-cols-1 -space-y-7">
+          <div className="group grid cursor-pointer grid-cols-1 -space-y-7 group-hover:last:-space-y-20 ">
             <div className="z-10 grid justify-items-center rounded-md bg-zinc-700 p-1 px-3 text-sm text-neutral-200 shadow-inner shadow-black">
               Fullstack Learner
             </div>
-            <div className="z-20 grid justify-items-center rounded-md bg-zinc-800 p-1 px-3 text-sm text-neutral-200 shadow-md duration-500 group-hover:my-1 group-hover:shadow-black">
+            <div className="z-20 grid justify-items-center rounded-md bg-zinc-800 p-1 px-3 text-sm text-neutral-200 shadow-md duration-500 group-hover:my-2 group-hover:shadow-black">
               Junior Web Developer
+            </div>
+            <div className="z-30 grid justify-items-center rounded-md bg-zinc-800 p-1 px-3 text-sm text-neutral-200 delay-300 group-hover:-z-10 group-hover:delay-100">
+              Junior
             </div>
           </div>
         </div>
