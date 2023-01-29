@@ -10,7 +10,7 @@ export default function ContactLayout({
   return (
     <section>
       <div className="static">
-        <div className="static -mt-3 -ml-3 text-3xl font-bold text-white">
+        <div className="static -ml-3 text-3xl font-bold text-white">
           <p>Contact with me</p>
           <Divide />
         </div>

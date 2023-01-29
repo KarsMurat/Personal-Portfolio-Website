@@ -35,7 +35,7 @@ function ProjectCard() {
               />
             </Link>
             <div className="flex flex-col space-y-6 p-4 pl-24">
-              <div className="flex flex-col">
+              <div className="flex flex-col rounded-full bg-zinc-900 py-1 ring-1 ring-zinc-800">
                 <strong className="flex justify-center text-sm font-medium text-slate-200">
                   {title}
                 </strong>

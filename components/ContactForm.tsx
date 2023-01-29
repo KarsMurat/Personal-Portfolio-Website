@@ -1,18 +1,18 @@
 export default function ContactForm() {
   return (
-    <form className="grid w-full grid-cols-1 place-content-between space-y-7 px-20">
-      <div className="flex place-content-between">
+    <form className="grid w-full grid-cols-1 place-content-between space-y-7">
+      <div className="flex place-content-between space-x-7">
         <div className="flex flex-wrap">
-          <div className="w-full space-y-2">
+          <div className="space-y-2">
             <label
-              className="block text-xs font-bold uppercase tracking-wide text-white"
+              className="text-xs font-bold uppercase tracking-wide text-white"
               htmlFor="name"
             >
               Name
             </label>
             <input
               required
-              className="block w-full rounded border bg-zinc-300 py-3 px-4 focus:bg-white"
+              className="w-full rounded border bg-zinc-300 py-3 px-4 focus:bg-white"
               id="name"
               type="text"
               placeholder="Your Name"
@@ -20,16 +20,16 @@ export default function ContactForm() {
           </div>
         </div>
         <div className="flex flex-wrap">
-          <div className="w-full space-y-2">
+          <div className="space-y-2">
             <label
-              className="block text-xs font-bold uppercase tracking-wide text-white"
+              className="text-xs font-bold uppercase tracking-wide text-white"
               htmlFor="email"
             >
               E-mail
             </label>
             <input
               required
-              className="block w-full rounded border bg-zinc-300 py-3 px-4 focus:bg-white"
+              className="w-full rounded border bg-zinc-300 py-3 px-4 focus:bg-white"
               id="email"
               type="email"
               placeholder="Your E-mail"
@@ -37,16 +37,16 @@ export default function ContactForm() {
           </div>
         </div>
         <div className="flex flex-wrap">
-          <div className="w-full space-y-2">
+          <div className="space-y-2">
             <label
-              className="block text-xs font-bold uppercase tracking-wide text-white"
+              className="text-xs font-bold uppercase tracking-wide text-white"
               htmlFor="subject"
             >
               Subject
             </label>
             <input
               required
-              className="block w-full rounded border bg-zinc-300 py-3 px-4 focus:bg-white"
+              className="w-full rounded border bg-zinc-300 py-3 px-4 focus:bg-white"
               id="subject"
               type="subject"
               placeholder="Subject of Your Message"
