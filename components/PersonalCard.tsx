@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Info, SocialMedia } from "../consts/personalCard";
+import { Info, SocialMedia } from "@/constants/personalCard";
 
 const Divider = () => (
   <div className="h-1 w-full rounded-full bg-zinc-800" />

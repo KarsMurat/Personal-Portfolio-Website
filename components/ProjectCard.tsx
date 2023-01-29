@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Projects } from "../consts/project";
+import { Projects } from "@/constants/project";
 
 const Divider = () => (
   <div className="h-1 w-full rounded-full bg-zinc-800" />
@@ -8,15 +8,14 @@ const Divider = () => (
 
 function ProjectCard() {
   return (
-    <div className="flex w-full flex-wrap items-center justify-center gap-6 p-6">
+    <div className="flex w-full flex-wrap items-center justify-center gap-6">
       {Projects.map((project, index) => {
         const { title, desc, path, img, tools } = project;
 
         return (
           <div
             key={index}
-            className="relative mx-auto flex max-h-fit max-w-md cursor-default items-center overflow-visible rounded-xl bg-zinc-900 shadow-md shadow-black
-              ring-2 ring-zinc-800 duration-300 hover:scale-95 hover:ring-1 hover:ring-white"
+            className="relative mx-auto flex max-h-fit max-w-md cursor-default items-center overflow-visible rounded-xl bg-zinc-900 shadow-md shadow-black ring-2 ring-zinc-800 duration-300 hover:scale-95 hover:ring-1 hover:ring-white"
           >
             <Link href={path}>
               <div className="absolute -top-3 -right-3 m-1 rounded-lg bg-zinc-800 p-1 px-3 text-zinc-300 duration-200 hover:scale-125">

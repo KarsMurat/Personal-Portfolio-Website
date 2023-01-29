@@ -2,20 +2,14 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-const NavbarItems = [
-  { name: "Home", path: "/" },
-  { name: "Projects", path: "/projects" },
-  { name: "Certificates", path: "/certificates" },
-  { name: "Contact", path: "/contact" },
-];
+import { Navigation } from "@/constants/navigation";
 
 export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="m-4 space-x-4 rounded-tr-md rounded-bl-md border-2 border-zinc-800 bg-zinc-800 p-2 px-6 text-xl font-semibold text-zinc-400 shadow-inner shadow-black">
-      {NavbarItems.map((item) => {
+    <nav className="m-4 space-x-4 rounded-tr-md rounded-bl-md border-2 border-zinc-800 bg-zinc-800 p-2 px-6 text-xl font-semibold text-zinc-400 shadow-inner shadow-black">
+      {Navigation.map((item) => {
         const { name, path } = item;
 
         return (
@@ -28,6 +22,6 @@ export default function Navbar() {
           </Link>
         );
       })}
-    </div>
+    </nav>
   );
 }
