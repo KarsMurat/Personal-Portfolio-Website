@@ -13,15 +13,18 @@ function ProjectCard() {
         const { title, desc, path, img, tools } = project;
 
         return (
-          <div
+          <section
             key={index}
             className="relative mx-auto flex max-h-fit max-w-md cursor-default items-center overflow-visible rounded-xl bg-zinc-900 shadow-md shadow-black ring-2 ring-zinc-800 duration-300 hover:scale-95 hover:ring-1 hover:ring-white"
           >
-            <Link href={path}>
-              <div className="absolute -top-3 -right-3 m-1 rounded-lg bg-zinc-800 p-1 px-3 text-zinc-300 duration-200 hover:scale-125">
+            <nav>
+              <Link
+                href={path}
+                className="absolute -top-3 -right-3 m-1 rounded-lg bg-zinc-800 p-1 px-3 text-zinc-300 duration-200 hover:scale-125"
+              >
                 GO
-              </div>
-            </Link>
+              </Link>
+            </nav>
             <Link
               href={path}
               className="absolute -left-16 h-36 w-36 skew-x-6 overflow-hidden rounded-3xl border-2 border-zinc-800 duration-700 hover:skew-x-0 hover:scale-150 hover:border-0 hover:ring-1 hover:ring-white"
@@ -34,15 +37,15 @@ function ProjectCard() {
                 className="rounded-2xl shadow-sm shadow-black duration-700 hover:scale-150 hover:grayscale"
               />
             </Link>
-            <div className="flex flex-col space-y-6 p-4 pl-24">
-              <div className="flex flex-col rounded-full bg-zinc-900 py-1 ring-1 ring-zinc-800">
+            <article className="flex flex-col space-y-6 p-4 pl-24">
+              <header className="flex flex-col rounded-full bg-zinc-900 py-1 ring-1 ring-zinc-800">
                 <strong className="flex justify-center text-sm font-medium text-slate-200">
                   {title}
                 </strong>
-              </div>
-              <span className="text-sm font-medium text-gray-500">
+              </header>
+              <p className="text-sm font-medium text-gray-500">
                 {desc}
-              </span>
+              </p>
               <div className="flex flex-wrap justify-center gap-1">
                 {tools.map((project, index) => {
                   const { name, icon } = project;
@@ -67,7 +70,7 @@ function ProjectCard() {
               </div>
               <Divider />
               <span className="text-sm font-medium text-cyan-600">
-                <div className="flex justify-end space-x-2">
+                <nav className="flex justify-end space-x-2">
                   {project.link.map((project, index) => {
                     const { icon, name, url } = project;
 
@@ -89,10 +92,10 @@ function ProjectCard() {
                       </Link>
                     );
                   })}
-                </div>
+                </nav>
               </span>
-            </div>
-          </div>
+            </article>
+          </section>
         );
       })}
     </div>

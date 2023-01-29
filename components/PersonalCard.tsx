@@ -60,7 +60,7 @@ function PersonalCard() {
         })}
       </div>
       <Divider />
-      <div className="flex space-x-3">
+      <nav className="flex space-x-3">
         {SocialMedia.map((item) => {
           const { title, url, icon } = item;
 
@@ -76,7 +76,7 @@ function PersonalCard() {
             </Link>
           );
         })}
-      </div>
+      </nav>
     </div>
   );
 }

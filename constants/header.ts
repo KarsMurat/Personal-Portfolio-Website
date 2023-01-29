@@ -16,6 +16,7 @@ export const Header = {
   certificates: {
     title: `Certificates | ${title}`,
     author: author,
+    header: "My certificates",
     description: "My all certificates",
     keywords: keywords,
     icon: "/img/icon/certificates.ico",
@@ -23,6 +24,7 @@ export const Header = {
   contact: {
     title: `Contact | ${title}`,
     author: author,
+    header: "Contact with me",
     description: "Contact with me",
     keywords: keywords,
     icon: "/img/icon/contact.ico",
@@ -30,6 +32,7 @@ export const Header = {
   projects: {
     title: `Projects | ${title}`,
     author: author,
+    header: "My projects",
     description: "My all projects",
     keywords: keywords,
     icon: "/img/icon/projects.ico",

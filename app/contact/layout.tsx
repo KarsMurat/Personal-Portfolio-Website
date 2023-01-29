@@ -1,3 +1,5 @@
+import { Header } from "@/constants/header";
+
 export default function ContactLayout({
   children,
 }: {
@@ -8,16 +10,14 @@ export default function ContactLayout({
   }
 
   return (
-    <section>
-      <div className="static">
-        <div className="static -ml-3 text-3xl font-bold text-white">
-          <p>Contact with me</p>
-          <Divide />
-        </div>
-        <div className="mt-5 inline-block h-full w-full py-5">
-          {children}
-        </div>
-      </div>
-    </section>
+    <div className="static">
+      <header className="static -ml-3 text-3xl font-bold text-white">
+        <h1>{Header.contact.header}</h1>
+        <Divide />
+      </header>
+      <main className="mt-5 inline-block h-full w-full py-5">
+        {children}
+      </main>
+    </div>
   );
 }

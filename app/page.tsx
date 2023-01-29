@@ -1,6 +1,6 @@
 export default function HomePage() {
   return (
-    <div>
+    <section>
       <p className="text-3xl text-zinc-300">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
         Aspernatur provident reiciendis impedit laudantium porro cum
@@ -41,6 +41,6 @@ export default function HomePage() {
         beatae maxime blanditiis soluta sunt excepturi! Odio ea
         voluptate dolores quas libero quis.
       </p>
-    </div>
+    </section>
   );
 }

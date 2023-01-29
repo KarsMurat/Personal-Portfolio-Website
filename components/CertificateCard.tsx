@@ -12,30 +12,30 @@ function CertificateCard() {
         const { name, desc, corp, urlName, urlLink } = certificate;
 
         return (
-          <div
+          <section
             key={index}
             className="flex w-fit max-w-md cursor-default items-center rounded-xl bg-zinc-900 p-4 ring-2 ring-zinc-800"
           >
-            <div className="flex flex-col space-y-2">
-              <div className="flex items-center justify-center text-sm font-medium text-white">
+            <article className="flex flex-col space-y-2">
+              <header className="flex items-center justify-center text-sm font-medium text-white">
                 {name}
-              </div>
+              </header>
               <div className="flex items-center justify-center text-sm font-medium text-slate-500">
                 {corp}
               </div>
-              <span className="indent-4 text-sm font-medium text-gray-400">
+              <p className="indent-4 text-sm font-medium text-gray-400">
                 {desc}
-              </span>
+              </p>
               <Divider />
-              <div className="flex items-center justify-end">
+              <nav className="flex items-center justify-end">
                 <Link href={urlLink}>
                   <span className="text-sm font-medium text-green-900">
                     {urlName}
                   </span>
                 </Link>
-              </div>
-            </div>
-          </div>
+              </nav>
+            </article>
+          </section>
         );
       })}
     </div>

@@ -4,11 +4,11 @@ export default function Footer() {
   }
 
   return (
-    <div className="w-full text-zinc-400">
+    <footer className="w-full text-zinc-400">
       <Divide />
       <div className="mt-6 grid justify-center text-zinc-400">
         Copyright
       </div>
-    </div>
+    </footer>
   );
 }
