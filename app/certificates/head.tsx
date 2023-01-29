@@ -1,13 +1,20 @@
-export default function CertificatesHead() {
+import { Header } from "@/constants/header";
+
+export default function Head() {
   return (
     <>
-      <title>Certificates - Murat Kars</title>
+      <title>{Header.certificates.title}</title>
       <meta
         content="width=device-width, initial-scale=1"
         name="viewport"
       />
-      <meta name="description" content="My all certificates" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href={Header.certificates.icon} />
+      <meta name="author" content={Header.certificates.author} />
+      <meta
+        name="description"
+        content={Header.certificates.description}
+      />
+      <meta name="keywords" content={Header.certificates.keywords} />
     </>
   );
 }
