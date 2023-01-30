@@ -3,6 +3,7 @@ const loremIconLink = "https://picsum.photos/100";
 const loremIconTool = "https://picsum.photos/90";
 
 const ProjectsPath = "projects";
+
 export const Projects = [
   {
     title: "Project 1",
