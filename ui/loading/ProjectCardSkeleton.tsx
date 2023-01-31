@@ -1,4 +1,4 @@
-import { Projects } from "@/constants/project";
+import { Projects } from "@/constants/projectCard";
 
 const projectTotal = Object.keys(Projects).length;
 
