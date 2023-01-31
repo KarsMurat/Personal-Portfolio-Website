@@ -18,7 +18,7 @@ function ProjectCard() {
             <nav>
               <Link
                 href={path}
-                className="group absolute -top-5 -right-5 m-1 rounded-tl-lg rounded-br-lg bg-zinc-900 stroke-white p-1 text-zinc-300 duration-200 hover:scale-150 hover:bg-white hover:stroke-zinc-900 hover:ring-4 hover:ring-zinc-900"
+                className="group absolute -top-5 -right-5 m-1 rounded-tl-lg rounded-br-lg bg-zinc-900 stroke-white p-1 text-zinc-300 duration-500 hover:scale-150 hover:bg-white hover:stroke-zinc-900 hover:ring-4 hover:ring-zinc-900"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
