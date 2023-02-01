@@ -1,3 +1,5 @@
+import { CertificateCardSkeleton } from "@/ui/loading/CertificateCardSkeleton";
+
 export default function Loading() {
-  return <div className="text-white">Loading...</div>;
+  return <CertificateCardSkeleton />;
 }
