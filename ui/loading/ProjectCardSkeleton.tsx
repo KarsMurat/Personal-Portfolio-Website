@@ -14,7 +14,7 @@ export function ProjectCardSkeleton() {
       {[...Array(projectTotal)].map(() => (
         <div
           key={uniqueKey}
-          className="relative mx-auto flex max-h-fit max-w-md cursor-default items-center rounded-xl bg-zinc-900 shadow-md shadow-black ring-2 ring-zinc-800"
+          className="relative mx-auto flex max-h-fit max-w-md items-center rounded-xl bg-zinc-900 shadow-md shadow-black ring-2 ring-zinc-800"
         >
           <div
             className={`absolute -top-5 -right-5 z-10 m-1 h-8 w-8 rounded-tl-lg rounded-br-lg bg-zinc-800 shadow-sm shadow-black${shimmer}`}
@@ -25,30 +25,26 @@ export function ProjectCardSkeleton() {
             />
           </div>
           <div className="flex flex-col space-y-6 p-4 pl-24">
-            <div className="flex justify-center rounded-full ring-1 ring-zinc-800">
-              <div
-                className={`h-7 w-full rounded-full bg-zinc-900 ${shimmer}`}
-              />
-            </div>
+            <div
+              className={`h-7 w-full rounded-full bg-zinc-900 ring-1 ring-zinc-800 ${shimmer}`}
+            />
             <div className={`h-24 w-full rounded-lg bg-gray-800 ${shimmer}`} />
             <div className="flex flex-wrap justify-center gap-1">
               {[...Array(7)].map(() => (
                 <div
                   key={uniqueKey}
-                  className={`flex h-7 w-16 rounded-sm bg-zinc-700 ${shimmer}`}
+                  className={`h-7 w-16 rounded-sm bg-zinc-700 ${shimmer}`}
                 />
               ))}
             </div>
             <Divider />
-            <div className="text-sm font-medium text-cyan-600">
-              <div className="flex justify-end space-x-2">
-                {[...Array(2)].map(() => (
-                  <div
-                    key={uniqueKey}
-                    className={`flex h-6 w-20 space-x-1 rounded-full bg-zinc-800 ${shimmer}`}
-                  />
-                ))}
-              </div>
+            <div className="flex justify-end space-x-2">
+              {[...Array(2)].map(() => (
+                <div
+                  key={uniqueKey}
+                  className={`flex h-6 w-20 rounded-full bg-zinc-800 ${shimmer}`}
+                />
+              ))}
             </div>
           </div>
         </div>
