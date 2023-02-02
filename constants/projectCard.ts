@@ -1,4 +1,4 @@
-const loremImage = "https://picsum.photos/300";
+const loremImage = "https://picsum.photos/1000/600";
 const loremIconLink = "https://picsum.photos/100";
 const loremIconTool = "https://picsum.photos/90";
 

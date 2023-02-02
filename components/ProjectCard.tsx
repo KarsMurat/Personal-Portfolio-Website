@@ -13,45 +13,47 @@ function ProjectCard() {
         return (
           <section
             key={index}
-            className="relative mx-auto flex max-h-fit max-w-md cursor-default items-center overflow-visible rounded-xl bg-zinc-900 shadow-md shadow-black ring-2 ring-zinc-800 duration-300 hover:scale-95 hover:ring-white"
+            className="relative mx-12 my-5 flex max-h-fit max-w-md scale-95 cursor-default items-center overflow-visible rounded-xl bg-zinc-900 shadow-inner shadow-black ring-2 ring-zinc-800 duration-300 hover:scale-100 hover:shadow-lg hover:shadow-black hover:ring-white"
           >
-            <nav>
+            <article className="flex flex-col space-y-6 p-4 pl-24">
+              <nav>
+                <Link
+                  href={path}
+                  className="absolute -top-5 -right-5 m-1 rounded-tl-lg rounded-br-lg bg-zinc-900 stroke-white stroke-2 p-1 duration-500 hover:scale-150 hover:bg-white hover:stroke-zinc-900 hover:ring-4 hover:ring-zinc-900"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    className="feather feather-external-link fill-none"
+                  >
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </Link>
+              </nav>
               <Link
                 href={path}
-                className="group absolute -top-5 -right-5 m-1 rounded-tl-lg rounded-br-lg bg-zinc-900 stroke-white p-1 text-zinc-300 duration-500 hover:scale-150 hover:bg-white hover:stroke-zinc-900 hover:ring-4 hover:ring-zinc-900"
+                className="absolute -left-24 top-16 h-44 w-44 skew-x-6 overflow-hidden rounded-2xl border-2 border-zinc-800 duration-700 hover:fixed hover:left-0 hover:top-20 hover:h-3/5 hover:w-10/12 hover:skew-x-0 hover:scale-150 hover:shadow-2xl hover:shadow-black hover:ring-2 hover:ring-white"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  className="feather feather-external-link fill-none"
-                >
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                  <polyline points="15 3 21 3 21 9" />
-                  <line x1="10" y1="14" x2="21" y2="3" />
-                </svg>
+                <Image
+                  src={img}
+                  alt={title}
+                  height={300}
+                  width={300}
+                  className="h-full w-full rounded-2xl object-cover grayscale duration-700 hover:scale-105 hover:border-0 hover:object-cover hover:grayscale-0"
+                />
               </Link>
-            </nav>
-            <Link
-              href={path}
-              className="absolute -left-16 h-36 w-36 skew-x-6 overflow-hidden rounded-3xl border-2 border-zinc-800 duration-700 hover:skew-x-0 hover:scale-150 hover:border-0 hover:ring-1 hover:ring-white"
-            >
-              <Image
-                src={img}
-                alt={title}
-                height={300}
-                width={300}
-                className="rounded-2xl shadow-sm shadow-black duration-700 hover:scale-150 hover:grayscale"
-              />
-            </Link>
-            <article className="flex flex-col space-y-6 p-4 pl-24">
               <header className="flex flex-col rounded-full bg-zinc-900 py-1 ring-1 ring-zinc-800">
                 <strong className="flex justify-center text-sm font-medium text-slate-200">
                   {title}
                 </strong>
               </header>
-              <p className="text-sm font-medium text-gray-500">{desc}</p>
+              <p className="indent-4 text-sm font-medium text-gray-500">
+                {desc}
+              </p>
               <div className="flex flex-wrap justify-center gap-1">
                 {tools.map((project, index) => {
                   const { name, icon } = project;
