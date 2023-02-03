@@ -1,10 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Info, SocialMedia } from "@/constants/personalCard";
+import {
+  Avatar,
+  Info,
+  Name,
+  SocialMedia,
+  Title,
+  SecretTitle,
+} from "@/constants/personalCard";
 
-const Divider = () => (
-  <div className="h-1 w-full rounded-full bg-zinc-800" />
-);
+const Divider = () => <div className="h-1 w-full rounded-full bg-zinc-800" />;
 
 function PersonalCard() {
   return (
@@ -12,21 +17,19 @@ function PersonalCard() {
       <div className="grid grid-cols-1 place-content-between justify-items-center space-y-5">
         <Image
           className="rounded-3xl shadow-md shadow-black"
-          src={"/img/myAvatar.png"}
+          src={Avatar}
           width={175}
           height={175}
           alt="img/myAvatar"
         />
         <div className="space-y-5">
-          <div className="grid justify-items-center text-4xl">
-            Murat Kars
-          </div>
+          <div className="grid justify-items-center text-4xl">{Name}</div>
           <div className="group grid cursor-pointer grid-cols-1 -space-y-7 group-hover:last:-space-y-20 ">
             <div className="z-10 grid justify-items-center rounded-md bg-zinc-700 p-1 px-3 text-sm text-neutral-200 shadow-inner shadow-black">
-              Fullstack Learner
+              {SecretTitle}
             </div>
             <div className="z-20 grid justify-items-center rounded-md bg-zinc-800 p-1 px-3 text-sm text-neutral-200 shadow-md duration-500 group-hover:my-2 group-hover:shadow-black">
-              Junior Web Developer
+              {Title}
             </div>
             <div className="z-30 grid justify-items-center rounded-md bg-zinc-800 p-1 px-3 text-sm text-neutral-200 delay-300 group-hover:-z-10 group-hover:delay-100">
               Junior

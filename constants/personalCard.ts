@@ -1,6 +1,13 @@
 const loremIconInfo = "https://picsum.photos/100";
 const loremIconSocial = "https://picsum.photos/90";
 
+export const Name = "Murat Kars";
+
+export const Title = "Junior Web Developer";
+export const SecretTitle = "Fullstack Learner";
+
+export const Avatar = "/img/myAvatar.png";
+
 export const Info = [
   { title: "Mail", desc: "mail@mail.com", icon: loremIconInfo },
   { title: "Location", desc: "Istanbul", icon: loremIconInfo },
