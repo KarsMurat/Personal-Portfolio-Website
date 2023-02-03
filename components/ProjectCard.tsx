@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Projects } from "@/constants/projectCard";
+import { ExternalLinkIcon } from "@/ui/icon/extarnalLink";
 
 const Divider = () => <div className="h-1 w-full rounded-full bg-zinc-800" />;
 
@@ -21,17 +22,7 @@ function ProjectCard() {
                   href={path}
                   className="absolute -top-5 -right-5 m-1 rounded-tl-lg rounded-br-lg bg-zinc-900 stroke-white stroke-2 p-1 duration-500 hover:scale-150 hover:bg-white hover:stroke-zinc-900 hover:ring-4 hover:ring-zinc-900"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    className="feather feather-external-link fill-none"
-                  >
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                    <polyline points="15 3 21 3 21 9" />
-                    <line x1="10" y1="14" x2="21" y2="3" />
-                  </svg>
+                  <ExternalLinkIcon />
                 </Link>
               </nav>
               <Link
