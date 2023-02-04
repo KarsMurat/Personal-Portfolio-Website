@@ -2,7 +2,7 @@ import ContactForm from "@/components/ContactForm";
 
 export default function Contact() {
   return (
-    <section>
+    <section className="grid justify-items-center">
       <ContactForm />
     </section>
   );

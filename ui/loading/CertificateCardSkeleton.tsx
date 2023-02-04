@@ -8,7 +8,7 @@ const Divider = () => <div className="h-1 w-full rounded-full bg-zinc-800" />;
 
 export function CertificateCardSkeleton() {
   return (
-    <div className="flex flex-wrap items-center justify-center gap-6">
+    <div className="flex flex-wrap items-center justify-center gap-8">
       {[...Array(certificateTotal)].map(() => (
         <div
           key={Math.random()}

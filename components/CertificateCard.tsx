@@ -5,7 +5,7 @@ const Divider = () => <div className="h-1 w-full rounded-full bg-zinc-800" />;
 
 function CertificateCard() {
   return (
-    <div className="flex flex-wrap items-center justify-center gap-6">
+    <div className="flex flex-wrap items-center justify-center gap-8">
       {Certificates.map((certificate, index) => {
         const { name, desc, corp, urlName, urlLink } = certificate;
 

@@ -15,9 +15,7 @@ export default function ContactLayout({
         <h1>{HeaderContact.contact.header}</h1>
         <Divide />
       </header>
-      <main className="mt-5 inline-block h-full w-full py-5">
-        {children}
-      </main>
+      <main className="mt-5 inline-block h-full w-full py-5">{children}</main>
     </div>
   );
 }

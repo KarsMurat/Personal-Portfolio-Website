@@ -15,11 +15,11 @@ const Divider = () => <div className="h-1 w-full rounded-full bg-zinc-800" />;
 
 export function ProjectCardSkeleton() {
   return (
-    <div className="flex w-full flex-wrap items-center justify-center gap-6">
+    <div className="flex w-full flex-wrap items-center justify-center gap-20">
       {[...Array(projectTotal)].map(() => (
         <div
           key={Math.random()}
-          className="relative mx-10 my-5 flex max-h-fit max-w-md scale-95 items-center rounded-xl bg-zinc-900 shadow-inner shadow-black ring-2 ring-zinc-800"
+          className="relative mx-4 flex max-h-fit max-w-md scale-95 items-center rounded-xl bg-zinc-900 shadow-inner shadow-black ring-2 ring-zinc-800"
         >
           <div
             className={`absolute -top-5 -right-5 z-10 m-1 h-8 w-8 rounded-tl-lg rounded-br-lg bg-zinc-800 shadow-sm shadow-black${shimmer}`}
@@ -30,9 +30,7 @@ export function ProjectCardSkeleton() {
             />
           </div>
           <div className="flex w-full flex-col space-y-6 p-4 pl-24">
-            <div
-              className={`h-7 w-full rounded-full bg-zinc-900 ring-1 ring-zinc-800 ${shimmer}`}
-            />
+            <div className={`h-7 w-full rounded-full bg-zinc-900 ${shimmer}`} />
             <div className={`h-24 w-full rounded-lg bg-gray-800 ${shimmer}`} />
             <div className="flex flex-wrap justify-center gap-1">
               {[...Array(averageTools)].map(() => (

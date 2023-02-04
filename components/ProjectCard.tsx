@@ -7,16 +7,16 @@ const Divider = () => <div className="h-1 w-full rounded-full bg-zinc-800" />;
 
 function ProjectCard() {
   return (
-    <div className="flex w-full flex-wrap items-center justify-center gap-6">
+    <div className="flex w-full flex-wrap items-center justify-center gap-20">
       {Projects.map((project, index) => {
         const { title, desc, path, img, tools } = project;
 
         return (
           <section
             key={index}
-            className="relative mx-12 my-5 flex max-h-fit max-w-md scale-95 cursor-default items-center overflow-visible rounded-xl bg-zinc-900 shadow-inner shadow-black ring-2 ring-zinc-800 duration-300 hover:scale-100 hover:shadow-lg hover:shadow-black hover:ring-white"
+            className="relative mx-4 flex max-h-fit max-w-md scale-95 cursor-default items-center overflow-visible rounded-xl bg-zinc-900 shadow-inner shadow-black ring-2 ring-zinc-800 duration-300 hover:scale-100 hover:shadow-lg hover:shadow-black hover:ring-white"
           >
-            <article className="flex flex-col space-y-6 p-4 pl-24">
+            <article className="flex flex-col space-y-6 px-4 pb-4 pl-24">
               <nav>
                 <Link
                   href={path}
