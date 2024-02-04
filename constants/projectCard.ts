@@ -18,7 +18,7 @@ export const Projects = [
       {
         name: "Website",
         icon: loremIconLink,
-        url: "https://www.muratkars.live",
+        url: "https://www.muratkars.tech",
       },
     ],
     img: loremImage,
@@ -48,7 +48,7 @@ export const Projects = [
       {
         name: "Website",
         icon: loremIconLink,
-        url: "https://www.muratkars.live",
+        url: "https://www.muratkars.tech",
       },
     ],
     img: loremImage,
@@ -76,7 +76,7 @@ export const Projects = [
       {
         name: "Website",
         icon: loremIconLink,
-        url: "https://www.muratkars.live",
+        url: "https://www.muratkars.tech",
       },
     ],
     img: loremImage,
@@ -103,7 +103,7 @@ export const Projects = [
       {
         name: "Website",
         icon: loremIconLink,
-        url: "https://www.muratkars.live",
+        url: "https://www.muratkars.tech",
       },
     ],
     img: loremImage,
@@ -129,7 +129,7 @@ export const Projects = [
       {
         name: "Website",
         icon: loremIconLink,
-        url: "https://www.muratkars.live",
+        url: "https://www.muratkars.tech",
       },
     ],
     img: loremImage,

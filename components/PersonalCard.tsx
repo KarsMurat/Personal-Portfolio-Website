@@ -28,7 +28,7 @@ function PersonalCard() {
             <div className="z-10 grid justify-items-center rounded-md bg-zinc-700 p-1 px-3 text-sm text-neutral-200 shadow-inner shadow-black">
               {SecretTitle}
             </div>
-            <div className="z-20 grid justify-items-center rounded-md bg-zinc-800 p-1 px-3 text-sm text-neutral-200 shadow-md duration-500 group-hover:my-2 group-hover:shadow-black">
+            <div className="z-20 grid justify-items-center rounded-md bg-zinc-800 p-1 px-3 text-sm text-neutral-200 duration-500 group-hover:my-2 group-hover:shadow-md group-hover:shadow-black">
               {Title}
             </div>
             <div className="z-30 grid justify-items-center rounded-md bg-zinc-800 p-1 px-3 text-sm text-neutral-200 delay-300 group-hover:-z-10 group-hover:delay-100">

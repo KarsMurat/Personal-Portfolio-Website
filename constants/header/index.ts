@@ -4,7 +4,7 @@ export const author = "Murat Kars";
 export const keywords =
   "Murat Kars, Web Development, Junior Frontend Web Developer";
 export const icon = "/img/icon/home.ico";
-export const canonical = "https://www.muratkars.live";
+export const canonical = "https://www.muratkars.tech";
 export const og_site_name = "Murat Kars";
 export const og_type = "website";
 export const og_image = "/img/myAvatar.png";

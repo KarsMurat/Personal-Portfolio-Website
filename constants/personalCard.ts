@@ -21,17 +21,17 @@ export const Info = [
 export const SocialMedia = [
   {
     title: "Github",
-    url: "https://www.muratkars.live/",
+    url: "https://www.muratkars.tech/",
     icon: loremIconSocial,
   },
   {
     title: "LinkedIn",
-    url: "https://www.muratkars.live/",
+    url: "https://www.muratkars.tech/",
     icon: loremIconSocial,
   },
   {
     title: "Twitter",
-    url: "https://www.muratkars.live/",
+    url: "https://www.muratkars.tech/",
     icon: loremIconSocial,
   },
 ];

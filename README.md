@@ -10,7 +10,7 @@
 
 Captured at Jan 19, 2023, 4:15 AM GMT+3
 
-<a href="https://googlechrome.github.io/lighthouse/viewer/?gist=438baa75e1de3ad80f829f6659a76936"><img src="https://personal-portfolio-website.muratkars.live/img/personal-website.muratkars.live_2023-01-19_04-15-46.lighthouse.report.jpg"  alt="lighthouse"></a>
+<a href="https://googlechrome.github.io/lighthouse/viewer/?gist=438baa75e1de3ad80f829f6659a76936"><img src="https://personal-portfolio-website.muratkars.tech/img/personal-website.muratkars.tech_2023-01-19_04-15-46.lighthouse.report.jpg"  alt="lighthouse"></a>
 
 ---
 
